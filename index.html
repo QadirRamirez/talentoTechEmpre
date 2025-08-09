@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">>
+    <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Playwrite+AU+QLD:wght@100..400&display=swap" rel="stylesheet">
     <title>Medellin Ciudad Emprendedora</title>
 </head>
 <body>
@@ -23,12 +26,12 @@
 
     <section class="sectionInfo">
         <h2 class="sectionInfo__Title">Informacion</h2>
-        <p class="sectionInfo__P">Somos un grupo de estudiantes de la universidad Nacional de colombia de diferentes carreras universitarias, facilitando la interdisciplinariedad, que se encuentra cursando un boot camp intersemestral, enfocado en los principios básicos de programación</p>
+        <p class="sectionInfo__P">Somos un grupo de estudiantes de la universidad Nacional de colombia de diferentes carreras universitarias, facilitando la interdisciplinariedad, que se encuentra cursando un bootcamp intersemestral, enfocado en los principios básicos de programación</p>
     </section>
 
     <section class="sectionComunas">
         <h2 class="sectionComunas__Title">Comunas</h2>
-        <p class="sectionComunas__Lorem">
+        <p class="sectionComunas__P">
                                         1.Popular: Extensión 3,10 Km2, con una cantidad de Habitantes aproximado de 132.482 <br>
                                         2.Santa Cruz: Extensión 2,20 km2, con una cantidad de Habitantes aproximado de 113.520 <br>
                                         3.Manrique: Extensión 5,10 Km2, con una cantidad aproximada de Habitantes 162.374 <br>
@@ -54,7 +57,7 @@ https://www.medellin.gov.co/es/conoce-algunos-datos-generales-de-la-ciudad/
 
     <section class="sectionResultados">
         <h2 class="sectionResultados__Title">Resultados</h2>
-        <p>
+        <p class="sectionResultados__P">
             Uno de los resultados es la creación de esta página web, con la información clave para que los emprendedores puedan identificar sectores económicos clave y así poder enfocar sus esfuerzos en ciertas comunas. <br>
             Le sirve a la ciudadanía en general para que tenga una visión integral de su entorno y se apropien de la ciudad identificando los sectores económicos. <br>
             Identificar y sectorizar la actividad económica de Medellín esto facilitará la búsqueda de información detallada sobre el comercio o de alguna actividad económica específica ya que se tendría una georeferenciación por comunas en la ciudad de Medellín, adicionalmente se podría potenciar la fuerza de innovación con el análisis de los datos presentados. <br>
@@ -63,40 +66,58 @@ https://www.medellin.gov.co/es/conoce-algunos-datos-generales-de-la-ciudad/
     </section>
     
     <div class="encuestaMain">
-        <form class="encuestaMain__Form" action="a"><h3 class="encuestaMain__Title">Encuesta</h3></form>
+        <form class="encuestaMain__Form" action="a"><h3 class="encuestaMain__Title">Encuesta</h3> 
+            <br>
+
+            <div class="encuestaMain__DivNombre">
             <label class="inputNombre__Label" for="inputEncuestaNombre">Nombre Completos:</label>
             <input class="form__InputNombre" id="inputEncuestaNombre" type="text" maxlength="100" required>
+            </div>
 
+            <div class="encuestaMain__DivFNacimiento">
             <label class="fNacimiento__Label" for="formFNacimiento">Fecha de Nacimiento</label>
             <input class="form__FNacimiento" id="formFNacimiento" type="date" min="1920-01-01" max="2015-01-01" required>
+            </div>
 
+            <div class="encuestaMain__DivSexo">
             <label class="form__OSexual" for="">Orientacion Sexual:</label>
             <input class="osexual__Masc" type="radio"><label for="">Masculino</label>
             <input class="osexual__Fem" type="radio"><label for="">Femenino</label>
             <input class="osexual__NoEspecifica" type="radio"><label for="">Prefiero no decirlo</label>
+            </div>
 
-            <label class="form__NivelEstudio" for="">Nivel de Estudio:</label>
-            <input class="nivelEstudio__Inicial" id="edInicial" type="radio"><label for="edInicial">Educacion Inicial</label>
-            <input class="nivelEstudio__Preescolar" id="edPreescolar" class="" type="radio"><label for="edPreescolar">Educacion Preescolar</label>
-            <input class="nivelEstudio__Basica" id="edBasica" type="radio"><label for="edBasica">Educacion Basica</label>
-            <input class="nivelEstudio__Media" id="edMedia" type="radio"><label for="edMedia">Educacion Media</label>
-            <input class="nivelEstudio__Pregado" id="edPregrado" type="radio"><label for="edPregrado">Educacion Superior (Pregrado)</label>
-            <input class="nivelEstudio__Posgrado" id="edPosgrado" type="radio"><label for="edPosgrado">Educacion Superior (Posgrado)</label>
+            <div class="encuestaMain__DivEstudios">
+            <label class="form__NivelEstudio" for="">Nivel de Estudio:</label> <br>
+            <label for="edInicial">Educacion Inicial</label><input class="nivelEstudio__Inicial" id="edInicial" type="radio">
+            <label for="edPreescolar">Educacion Preescolar</label><input class="nivelEstudio__Preescolar" id="edPreescolar" class="" type="radio">
+            <label for="edBasica">Educacion Basica</label><input class="nivelEstudio__Basica" id="edBasica" type="radio">
+            <label for="edMedia">Educacion Media</label><input class="nivelEstudio__Media" id="edMedia" type="radio">
+            <label for="edPregrado">Educacion Superior (Pregrado)</label><input class="nivelEstudio__Pregado" id="edPregrado" type="radio">
+            <label for="edPosgrado">Educacion Superior (Posgrado)</label><input class="nivelEstudio__Posgrado" id="edPosgrado" type="radio">
+            </div>
 
+            <div class="encuestaMain__DivSecEconomico">
+            <label class="sectorEconomico__Label" for="sectorEconomico">Sector Economico:</label>
+            <input class="sectorEconomicoform__Input" id="sectorEconomico" type="text" max="100" required>
+            </div>
 
-            <label for="sectorEconomico">Sector Economico:</label>
-            <input class="form__SectorEconomico" id="sectorEconomico" type="text" max="100" required>
-
-            <label for="comunaTrabaja">Comuna en la que trabaja:</label>
+            <div class="encuestaMain__DivComTrabaja">
+            <label class="comunaTrabaja__Label" for="comunaTrabaja">Comuna en la que trabaja:</label>
             <input class="form__ComunaTrabaja" id="comunaTrabaja" type="text" max="100" required>
+            </div>
 
-            <label for="comunaEstudia">Comuna en la que vive:</label>
-            <input class="form__ComunaEstudia" id="comunaEstudia" type="text" max="100" required>
+            <div class="encuestaMain__DivComVive">
+            <label class="comunaVive__Label" for="comunaEstudia">Comuna en la que vive:</label>
+            <input class="form__ComunaVive" id="comunaVive" type="text" max="100" required>
+            </div>
 
-            <label for="comentariosForm">Comentarios:</label>
+            <div class="encuestaMain__DivComentarios">
+            <label class="comentarios__Label" for="comentariosForm">Comentarios:</label>
             <input class="form__Comentarios" id="comentariosForm" placeholder="No es Obligatorio" type="text">
+            </div>
 
-            <input type="submit">
+            <input class="form__Enviar" type="submit" value="Enviar">
+        </form>
     </div>
 
     <footer class="footerMain">
