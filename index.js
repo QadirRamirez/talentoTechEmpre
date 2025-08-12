@@ -41,9 +41,9 @@ document.addEventListener("DOMContentLoaded", () => {
         
         notiLoad.classList.add("oculto")
         document.body.style.overflow = ""
-        notiLoad.addEventListener("animationend"), () => {
+        notiLoad.addEventListener("transitionend", () => {
             notiLoad.remove()
-        }
+        });
 
     });
 });
