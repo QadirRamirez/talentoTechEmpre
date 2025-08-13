@@ -157,18 +157,22 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
     width: 50%;
     height: 475px;
 }
 .divMainImage img {
     overflow: hidden;
+    height: 500px;
 }
 
 .sectionInfo {
     width: 100%;
     height: 500px;
-    background-color: white;
+    background-image: url(Sources/imagenMedellin.jpg);
+    background-color: rgb(214, 214, 214);
+    background-blend-mode:hard-light;
+    background-repeat: no-repeat;
+    background-position: 0px -250px;
     display: flex;
     flex-flow: row nowrap;
 }
@@ -193,340 +197,170 @@ body {
     color: var(--colorP1);
 }
 
-.divInf {
+.div__Inf {
     width: 50%;
     height: 500px;
 }
 
-.sectionInfo__P {
-
-}
 
 .sectionComunas {
     display: flex;
-    flex-flow: column nowrap;
-    background-color: var(--main-ColorTres);
-    height: 1000px;
-    border-bottom: 5px solid var(--main-ColorCinco);
+    flex-flow: row nowrap;
+    background-color: var(--colorP10);
+    height: 800px;
+    width: 100%;
+}
+
+.comunas__Div, .comunas__Div2 {
+    width: 50%;
 }
 
 .sectionComunas__Title {
     padding: 20px;
     display: flex;
     align-items: end;
-    height: 10%;
+    justify-content: center;
+    height: 20%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
     font-size: 50px;
-    border-bottom: 1px solid var(--main-ColorCuatro);
+    color: var(--colorP1);
 }
 
 .sectionComunas__P {
     padding: 20px;
-    height: 90%;
-    align-items: start;
-    font-size: 30px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
-}
-
-.sectionResultados {
+    height: 10%;
     display: flex;
-    flex-flow: column nowrap;
-    background-color: var(--main-ColorTres);
-    height: 500px;
-    border-bottom: 5px solid var(--main-ColorCinco);
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--colorP1);
 }
 
-.sectionResultados__Title {
+.sectionGraficos {
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: var(--colorP10);
+    height: 800px;
+}
+
+.graficos__Div, .graficos__Div2 {
+    width: 50%;
+}
+
+.sectionGraficos__Title {
     padding: 20px;
     display: flex;
     align-items: end;
+    justify-content: center;
     height: 20%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
     font-size: 50px;
-    border-bottom: 1px solid var(--main-ColorCuatro);
+    color: var(--colorP1);
 }
 
-.sectionResultados__P {
+
+.sectionGraficos__P {
     padding: 20px;
-    height: 80%;
-    font-size: 30px;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    font-size: 25px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--colorP1);
 }
 
-.encuestaMain {
-    height: 700px;
+.sectionextraMain {
     display: flex;
-    flex-flow: column nowrap;
-    border-bottom: 5px solid var(--main-ColorCinco);
+    flex-flow: row nowrap;
+    background-color: var(--colorP10);
+    height: 800px;
 }
 
-.encuestaMain__Form {
-    background-color: #DB5461;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: start;
+.extraMain__Div, .extraMain__Div2 {
+    width: 50%;
 }
 
-.encuestaMain__Title {
+.extraMain__Title {
     padding: 20px;
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 30px;
-    height: 50px;
-    background-color: #0fc7a8;
+    height: 20%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-size: 50px;
+    color: var(--colorP1);
 }
 
-/* Encuesta Nombre */
-.encuestaMain__DivNombre {
-    padding: 0 50px 0 50px;
+.extraMain__P {
+    padding: 20px;
+    height: 10%;
     display: flex;
-    align-items: center;
     justify-content: center;
-    width: 40%;
-    height: 50px;
-    background-color: blue;
-    font-size: 20px;
-}
-
-.inputNombre__Label {
-
-}
-.form__InputNombre {
-
-}
-
-
-/* Encuesta fecha de nacimiento */
-.encuestaMain__DivFNacimiento {
-    padding: 0 50px 0 50px;
-    display: flex;
     align-items: center;
-    justify-content: center;
-    width: 40%;
-    height: 50px;
-    background-color: rgb(187, 24, 79);
+    width: 70%;
+    margin: auto;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--colorP1);
 }
 
-.fNacimiento__Label {
-
-}
-
-.form__FNacimiento {
-
-}
-
-
-/* Encuesta Orientacion Sexual */
-.encuestaMain__DivSexo {
-    padding: 0 50px 0 50px;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: center;
-    width: 40%;
-    height: 150px;
-    background-color: rgb(192, 80, 5);
-}
-
-.form__OSexual {
-
-}
-
-.osexual__Masc {
-
-}
-.osexual__Fem {
-
-}
-
-.osexual__NoEspecifica {
-
-}
-
-
-/* Encuesta Nivel de estudio */
-.encuestaMain__DivEstudios {
-    padding: 0 50px 0 50px;
+.extraMain__Form {
+    width: 100%;
+    height: 80%;
     display: flex;
     flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
-    width: 40%;
-    height: 250px;
-    background-color: rgb(20, 155, 76);
+    align-items: start;
+    justify-content: start;
+    padding: 100px;
+    
 }
 
-.form__NivelEstudio {
-
+.form__Label {
+    color: var(--colorP1);
+    margin-left: 125px;
+    margin-top: 15px;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.edInicial {
-
+#form__InputName, #form__InputEmail {
+    width: 500px;
+    height: 40px;
+    margin: 0 auto;
+    border-radius: 10px;
+    border-style: none;
+    border: var(--colorP9) 1px solid;
+    padding: 5px;
 }
 
-.nivelEstudio__Inicial {
-
+#form__InputComments {
+    width: 500px;
+    height: 100px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border-style: none;
+    border: var(--colorP9) 1px solid;
+    padding: 5px;
 }
 
-.edPreescolar {
-
-}
-
-.nivelEstudio__Preescolar {
-
-}
-
-.edBasica {
-
-}
-
-.nivelEstudio__Basica {
-
-}
-
-.edMedia {
-
-}
-
-.nivelEstudio__Media {
-
-}
-
-.edPregrado {
-
-}
-
-.nivelEstudio__Pregado {
-
-}
-
-.edPosgrado {
-
-}
-
-.nivelEstudio__Posgrado {
-
-}
-
-
-/* Encuesta sector economico */
-.encuestaMain__DivSecEconomico {
-    padding: 0 50px 0 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40%;
+#form__Submit {
+    color: var(--colorP11);
+    background-color: var(--colorP6);
+    width: 500px;
     height: 50px;
-    background-color: rgb(204, 170, 21);
-}
-
-.sectorEconomico__Label {
-
-}
-
-.sectorEconomicoform__Input {
-
-}
-
-
-/* Encuesta comuna donde trabaja */
-.encuestaMain__DivComTrabaja {
-    padding: 0 50px 0 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40%;
-    height: 50px;
-    background-color: rgb(196, 33, 196);
-}
-
-.comunaTrabaja__Label {
-
-}
-
-.form__ComunaTrabaja {
-
-}
-
-
-/* Comuna donde Vive */
-.encuestaMain__DivComVive {
-    padding: 0 50px 0 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40%;
-    height: 50px;
-    background-color: rgb(11, 141, 76);
-}
-
-.comunaVive__Label {
-
-}
-
-.form__ComunaVive {
-
-}
-
-/* encuesta Comentarios */
-.encuestaMain__DivComentarios {
-    padding: 0 50px 0 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40%;
-    height: 50px;
-    background-color: rgb(11, 11, 71);
-}
-
-.comentarios__Label {
-
-}
-
-.form__Comentarios {
-
-}
-
-/* Boton enviar Form */
-
-.form__Enviar {
-
-}
-
-
-/* Footer */
-
-.footerMain {
-    width: 100%;
-    height: 150px;
-    display: flex;
-    flex-flow: row nowrap;
-}
-
-.footerMain__Title {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 50px;
-}
-
-.footer__Lista {
-    display: flex;
-    width: 50%;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: space-evenly;
-    list-style: none;
+    margin: 0 auto;
+    border-radius: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 20px;
-    font-family: "Playwrite AU QLD", cursive;
-    border-radius: 100px 0 0 100px;
-    box-shadow: -2px 0px 5px black;
+    font-weight: 500;
+    border-style: none;
+    border: var(--colorP9) 1px solid;
 }
 

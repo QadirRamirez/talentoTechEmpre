@@ -33,104 +33,56 @@
     </section>
 
     <section class="sectionComunas">
-        <h2 class="sectionComunas__Title">Comunas</h2>
+        <div class="comunas__Div">
+        <h2 class="sectionComunas__Title">Datos por Comunas</h2>
         <p class="sectionComunas__P">
-                                        1.Popular: Extensión 3,10 Km2, con una cantidad de Habitantes aproximado de 132.482 <br>
-                                        2.Santa Cruz: Extensión 2,20 km2, con una cantidad de Habitantes aproximado de 113.520 <br>
-                                        3.Manrique: Extensión 5,10 Km2, con una cantidad aproximada de Habitantes 162.374 <br>
-                                        4.Aranjuez:Extensión 4,88 Km2, con una cantidad de Habitantes aproximado de 163.489 <br>
-                                        5.Castilla: Extensión 6,06 Km2, con una cantidad de Habitantes aproximado de 151.785 <br>
-                                        6.Doce de Octubre: Extensión 3,85 Km2, con una cantidad de Habitantes aproximado de 195.800 <br>
-                                        7.Robledo: Extensión 9,46 Km2, con una cantidad de Habitantes aproximado de 176.810 <br>
-                                        8.Villa Hermosa: Extensión 5,72 Km2, con una cantidad de Habitantes aproximado de 139.493 <br>
-                                        9.Buenos Aires: Extensión 6,05 Km2, con una cantidad de Habitantes aproximado de 137.494 <br>
-                                        10.La Candelaria: Extensión 7,36 Km2, con una cantidad de Habitantes aproximado de 85.783 <br>
-                                        11.Laureles: Extensión 7,40 Km2, con una cantidad de Habitantes aproximado de 123.185 <br>
-                                        12.La América: Extensión 3,97 Km2, con una cantidad de Habitantes aproximado de 97.457 <br>
-                                        13.San Javier: Extensión 4,85 Km2,  con una cantidad de Habitantes aproximado de 140.243 <br>
-                                        14.El Poblado: Extensión 14,42 Km2 con una cantidad de Habitantes aproximado de 133.814 <br>
-                                        15.Guayabal :Extensión 7,29 Km2,con una cantidad de Habitantes aproximado de 96.142 <br>
-                                        16.Belén: Extensión 8,86 Km2, con una cantidad de Habitantes aproximado de 197.593 <br>
-<br>
-*Información extraída de la página de la alcaldía de medellín, cifras del 2019 <br>
-https://www.medellin.gov.co/es/conoce-algunos-datos-generales-de-la-ciudad/
+                                    Mapa interactivo con georreferenciacion por comunas
         </p>
+        </div>
+        <div class="comunas__Div2">
+            <p></p>
+        </div>
     </section>
 
 
-    <section class="sectionResultados">
-        <h2 class="sectionResultados__Title">Resultados</h2>
-        <p class="sectionResultados__P">
-            Uno de los resultados es la creación de esta página web, con la información clave para que los emprendedores puedan identificar sectores económicos clave y así poder enfocar sus esfuerzos en ciertas comunas. <br>
-            Le sirve a la ciudadanía en general para que tenga una visión integral de su entorno y se apropien de la ciudad identificando los sectores económicos. <br>
-            Identificar y sectorizar la actividad económica de Medellín esto facilitará la búsqueda de información detallada sobre el comercio o de alguna actividad económica específica ya que se tendría una georeferenciación por comunas en la ciudad de Medellín, adicionalmente se podría potenciar la fuerza de innovación con el análisis de los datos presentados. <br>
-            (Todos estos resultados acompañados con las tablas de datos, los diagramas de flujo, circulares y diagramas de barras)
-        </p>
+    <section class="sectionGraficos">
+        <div class="graficos__Div">
+            <h2 class="sectionGraficos__Title">Visualización de datos</h2>
+            <p class="sectionGraficos__P">
+                Tablas y graficos sobre las actividades economicas
+            </p>
+        </div>
+        <div class="graficos__Div2">
+            <p></p>
+        </div>
     </section>
     
-    <div class="encuestaMain">
-        <form class="encuestaMain__Form" action="a"><h3 class="encuestaMain__Title">Encuesta</h3> 
-            <br>
+    <section class="sectionextraMain">
+        <div class="extraMain__Div">
+            <h2 class="extraMain__Title">Casos de éxito</h2>
+            <p class="extraMain__P">Una historia inspiradora de un emprendedor local</p>
+        </div>
 
-            <div class="encuestaMain__DivNombre">
-            <label class="inputNombre__Label" for="inputEncuestaNombre">Nombre Completos:</label>
-            <input class="form__InputNombre" id="inputEncuestaNombre" type="text" maxlength="100" required>
-            </div>
+        <div class="extraMain__Div2">
+            <h2 class="extraMain__Title">Contacto y comentarios</h2>
+            <form class="extraMain__Form" action="">
+                
+                    <label class="form__Label" for="">Nombre:</label>
+                    <input id="form__InputName" type="text" required>
+                
+                
+                    <label class="form__Label" for="">Correo:</label>
+                    <input id="form__InputEmail" type="email" required>
+        
+                <label class="form__Label" for="">Comentarios</label>
+                <input id="form__InputComments" type="text">
+                
 
-            <div class="encuestaMain__DivFNacimiento">
-            <label class="fNacimiento__Label" for="formFNacimiento">Fecha de Nacimiento</label>
-            <input class="form__FNacimiento" id="formFNacimiento" type="date" min="1920-01-01" max="2015-01-01" required>
-            </div>
+                <input id="form__Submit" type="submit">
+            </form>
+        </div>
+    </section>
 
-            <div class="encuestaMain__DivSexo">
-            <label class="form__OSexual" for="">Orientacion Sexual:</label>
-            <input class="osexual__Masc" type="radio"><label for="">Masculino</label>
-            <input class="osexual__Fem" type="radio"><label for="">Femenino</label>
-            <input class="osexual__NoEspecifica" type="radio"><label for="">Prefiero no decirlo</label>
-            </div>
 
-            <div class="encuestaMain__DivEstudios">
-            <label class="form__NivelEstudio" for="">Nivel de Estudio:</label> <br>
-            <label for="edInicial">Educacion Inicial</label><input class="nivelEstudio__Inicial" id="edInicial" type="radio">
-            <label for="edPreescolar">Educacion Preescolar</label><input class="nivelEstudio__Preescolar" id="edPreescolar" class="" type="radio">
-            <label for="edBasica">Educacion Basica</label><input class="nivelEstudio__Basica" id="edBasica" type="radio">
-            <label for="edMedia">Educacion Media</label><input class="nivelEstudio__Media" id="edMedia" type="radio">
-            <label for="edPregrado">Educacion Superior (Pregrado)</label><input class="nivelEstudio__Pregado" id="edPregrado" type="radio">
-            <label for="edPosgrado">Educacion Superior (Posgrado)</label><input class="nivelEstudio__Posgrado" id="edPosgrado" type="radio">
-            </div>
-
-            <div class="encuestaMain__DivSecEconomico">
-            <label class="sectorEconomico__Label" for="sectorEconomico">Sector Economico:</label>
-            <input class="sectorEconomicoform__Input" id="sectorEconomico" type="text" max="100" required>
-            </div>
-
-            <div class="encuestaMain__DivComTrabaja">
-            <label class="comunaTrabaja__Label" for="comunaTrabaja">Comuna en la que trabaja:</label>
-            <input class="form__ComunaTrabaja" id="comunaTrabaja" type="text" max="100" required>
-            </div>
-
-            <div class="encuestaMain__DivComVive">
-            <label class="comunaVive__Label" for="comunaEstudia">Comuna en la que vive:</label>
-            <input class="form__ComunaVive" id="comunaVive" type="text" max="100" required>
-            </div>
-
-            <div class="encuestaMain__DivComentarios">
-            <label class="comentarios__Label" for="comentariosForm">Comentarios:</label>
-            <input class="form__Comentarios" id="comentariosForm" placeholder="No es Obligatorio" type="text">
-            </div>
-
-            <input class="form__Enviar" type="submit" value="Enviar">
-        </form>
-    </div>
-
-    <footer class="footerMain">
-        <h4 class="footerMain__Title">Integrantes del proyecto:</h4>
-        <ul class="footer__Lista">
-            <li class="footer__elemento">Qadir Ramirez</li>
-            <li class="footer__elemento">Andres Rodriguez</li>
-            <li class="footer__elemento">Ana Hernandez</li>
-            <li class="footer__elemento">Manuel Heredia</li>
-        </ul>
-    </footer>
 </body>
 </html>
