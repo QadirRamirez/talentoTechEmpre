@@ -7,7 +7,22 @@ document.addEventListener("DOMContentLoaded", () => {
     const nombrePagLoad = document.createElement("div")
     const descPagLoad = document.createElement("p")
     const logoUNAL = document.createElement("img")
+    const switchOff = document.querySelector("#switch")
+    const nav = document.querySelector(".navegadorMain")
+    // switchsito
     
+
+switchOff.addEventListener("click", () => {
+    if (switchOff.classList.contains("switch__Off")) {
+    switchOff.classList.replace("switch__Off", "switch__On");
+    } else {
+    switchOff.classList.replace("switch__On", "switch__Off");
+    }
+
+    document.body.classList.toggle("modo-dark")
+    nav.classList.toggle("modo-dark")
+});
+
     
 
     // agregar contenido a elementos

@@ -10,19 +10,20 @@
     <title>Medellin Ciudad Emprendedora</title>
 </head>
 <script src="index.js" defer></script>
-<body>
+<body id="body">
 
     <nav class="navegadorMain">
         <h1 class="navegador__Title">Medellin ciudad emprendedora</h1>
         <ul class="navegador__Lista">
-            <li class="navegador__Elemento"><a class="navegador__Link" href="a">Inicio</a></li>
-            <li class="navegador__Elemento"><a class="navegador__Link" href="a">Datos por comuna</a></li>
-            <li class="navegador__Elemento"><a class="navegador__Link" href="a">Casos de exito</a></li>
-            <li class="navegador__Elemento"><a class="navegador__Link" href="a">Contacto</a></li>
+            <li class="navegador__Elemento"><a class="navegador__Link" href="#body">Inicio</a></li>
+            <li class="navegador__Elemento"><a class="navegador__Link" href="#sec__Comunas">Datos por comuna</a></li>
+            <li class="navegador__Elemento"><a class="navegador__Link" href="#sec__Extra">Casos de exito</a></li>
+            <li class="navegador__Elemento"><a class="navegador__Link" href="#footer__Contacto">Contacto</a></li>
+            <li class="navegador__Elemento"><span class="switch__Off" id="switch"></span></li>
         </ul>
     </nav>
 
-    <section class="sectionInfo">
+    <section class="sectionInfo" id="sec__Info">
         <div class="div__Inf">
             <h2 class="sectionInfo__Title">Potencia tu emprendimiento identificando sectores economicos clave</h2>
             <p class="sectionInfo__P">Somos un grupo de estudiantes de la universidad Nacional de colombia de diferentes carreras universitarias, facilitando la interdisciplinariedad, que se encuentra cursando un bootcamp intersemestral, enfocado en los principios básicos de programación</p>
@@ -32,7 +33,7 @@
     </div>
     </section>
 
-    <section class="sectionComunas">
+    <section class="sectionComunas" id="sec__Comunas">
         <div class="comunas__Div">
         <h2 class="sectionComunas__Title">Datos por Comunas</h2>
         <p class="sectionComunas__P">
@@ -45,7 +46,7 @@
     </section>
 
 
-    <section class="sectionGraficos">
+    <section class="sectionGraficos" id="sec__Graficos">
         <div class="graficos__Div">
             <h2 class="sectionGraficos__Title">Visualización de datos</h2>
             <p class="sectionGraficos__P">
@@ -57,10 +58,12 @@
         </div>
     </section>
     
-    <section class="sectionextraMain">
+    <section class="sectionextraMain" id="sec__Extra">
+
         <div class="extraMain__Div">
             <h2 class="extraMain__Title">Casos de éxito</h2>
             <p class="extraMain__P">Una historia inspiradora de un emprendedor local</p>
+            <iframe id="extraMain__Embedded" src="https://www.youtube.com/embed/HE6ckV74CU4" frameborder="0"></iframe>
         </div>
 
         <div class="extraMain__Div2">
@@ -75,13 +78,49 @@
                     <input id="form__InputEmail" type="email" required>
         
                 <label class="form__Label" for="">Comentarios</label>
-                <input id="form__InputComments" type="text">
-                
+                <textarea name="form__Comments" id="form__InputComments" ></textarea>
 
                 <input id="form__Submit" type="submit">
             </form>
         </div>
     </section>
+
+
+    <footer id="footer__Contacto">
+        <h4 class="footer__Title">Integrantes:</h4>
+    <div class="footer__ElementosDiv">
+        <ul class="footer__List">
+            <li class="footer__Element">Qadir Ramirez</li>
+            <li class="footer__Redes">
+                                    <a href="https://www.instagram.com/qramirezt/"><img class="redes__Img" src="Sources/igIcon.png" alt=""></a>
+                                    <a href="https://wa.link/cbcxhn"><img class="redes__Img" src="Sources/wspIcon.png" alt=""></a>
+                                    <a href="https://github.com/QadirRamirez"><img class="redes__Img" src="Sources/githubIcon.png" alt=""></a>
+            </li>
+        </ul>
+        <ul class="footer__List">
+            <li class="footer__Element">Andres Rodriguez</li>
+            <li class="footer__Redes">
+                                    <a href="https://www.instagram.com/andres.rzo/"><img class="redes__Img" src="Sources/igIcon.png" alt=""></a>
+                                    <a href="https://wa.link/pqdew5"><img class="redes__Img" src="Sources/wspIcon.png" alt=""></a>
+                                    <a href="https://github.com/adro1035"><img class="redes__Img" src="Sources/githubIcon.png" alt=""></a>
+            </li>
+        </ul>
+        <ul class="footer__List">
+            <li class="footer__Element">Manuel Heredia</li>
+            <li class="footer__Redes">
+                                    <a href="https://www.instagram.com/heredia_115/"><img class="redes__Img" src="Sources/igIcon.png" alt=""></a>
+                                    <a href="https://wa.link/ie3t32"><img class="redes__Img" src="Sources/wspIcon.png" alt=""></a>
+                                    <a href="https://github.com/mansanchezhe"><img class="redes__Img" src="Sources/githubIcon.png" alt=""></a>
+            </li>
+        </ul>
+        <ul class="footer__List">
+            <li class="footer__Element">Ana Hernandez</li>
+            <li class="footer__Redes">
+                                    <a href=""><img class="redes__Img" src="Sources/wspIcon.png" alt=""></a>
+            </li>
+        </ul>
+    </div>
+    </footer>
 
 
 </body>
