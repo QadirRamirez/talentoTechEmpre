@@ -21,16 +21,20 @@
 
     --bg: var(--colorP10);
     --text: var(--colorP2);
+    --textNegro: black;
     --nav-bg: var(--colorP10);
     --nav-text: var(--colorP2);
+    --divCom: var(--colorP11);
 }
 
 .modo-dark {
+    --divCom: #02001b;
     --foto: #444581;
     --bg: #02001b;
     --text: var(--colorP11);
     --nav-bg:  #010011;
     --nav-text: var(--colorP11);
+    --textNegro: var(--colorP11);
 }
 
 /* DOM */
@@ -141,6 +145,7 @@ body {
     flex-direction: row;
     width: 100%;
     height: 9vh;
+    border-bottom: 1px solid var(--colorP9);
 }
 
 .navegador__Title {
@@ -229,8 +234,9 @@ body {
 }
 
 .sectionInfo {
+    padding: 100px 0 0 0;
     width: 100%;
-    height: 500px;
+    height: 900px;
     background-image: url(Sources/imagenMedellin.jpg);
     background-color: var(--foto);
     background-blend-mode:hard-light;
@@ -257,7 +263,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     margin: 20px 0 0 50px;
-    
+    backdrop-filter: blur(15px);
 }
 
 .div__Inf {
@@ -269,8 +275,9 @@ body {
 .sectionComunas {
     display: flex;
     flex-flow: row nowrap;
-    height: 800px;
+    height: 1000px;
     width: 100%;
+
 }
 
 .comunas__Div, .comunas__Div2 {
@@ -299,10 +306,28 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+#selectComunas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 25%;
+    height: 35px;
+    border-radius: 10px;
+    margin: 50px 0 0 350px;
+    border: 1px solid var(--colorP8);
+}
+
+.select__CM {
+    border: 1px solid var(--colorP8);
+}
+
 .sectionGraficos {
     display: flex;
     flex-flow: row nowrap;
-    height: 800px;
+    height: 1000px;
+    padding: 50px 0 0 0;
+    background-color: var(--divCom);
 }
 
 .graficos__Div, .graficos__Div2 {
@@ -319,6 +344,12 @@ body {
     font-size: 50px;
 }
 
+.graficos__Div2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .sectionGraficos__P {
     padding: 20px;
@@ -327,15 +358,167 @@ body {
     justify-content: center;
     align-items: center;
     width: 70%;
-    margin: auto;
+    margin: 10px 0 0 200px;
     font-size: 25px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--textNegro);
 }
+
+.comunas__P {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 50%;
+    height: 30%;
+    margin: 50px 0 0 220px;
+    color: var(--textNegro);
+}
+
+
+.div1__Com {
+    margin: 200px 0 0 0;
+    width: 90%;
+    height: 90%;
+    
+}
+
+.div-CM1 {
+    background-image: url(Sources/fotoComunas/popular1.png);
+    background-size: 800px;
+    background-repeat: no-repeat;
+    background-position-x: 20px;
+    background-position-y: -90px;
+}
+
+.div-CM2 {
+    background-image: url(Sources/fotoComunas/santacruz2.png);
+    background-size: 800px;
+    background-repeat: no-repeat;
+    background-position-x: 20px;
+    background-position-y: -40px;
+    
+}
+
+.div-CM3 {
+    background-image: url(Sources/fotoComunas/manrique3.png);
+    background-size: 800px;
+    background-repeat: no-repeat;
+    background-position-x: 20px;
+    background-position-y: -40px;
+}
+
+.div-CM4 {
+    background-image: url(Sources/fotoComunas/aranjuez4.png);
+    background-size: 800px;
+    background-repeat: no-repeat;
+    background-position-x: 20px;
+    background-position-y: -40px;
+}
+
+.div-CM5 {
+    background-image: url(Sources/fotoComunas/castilla5.png);
+    background-size: 800px;
+    background-repeat: no-repeat;
+    background-position-x: 20px;
+    background-position-y: -70px;
+}
+
+.div-CM6 {
+    background-image: url(Sources/fotoComunas/docedeoctubre6.png);
+    background-size: 800px;
+    background-repeat: no-repeat;
+    background-position-x: 20px;
+    background-position-y: -40px;
+}
+
+.div-CM7 {
+    background-image: url(Sources/fotoComunas/robledo7.png);
+    background-size: 800px;
+    background-repeat: no-repeat;
+    background-position-x: 20px;
+    background-position-y: -40px;
+}
+
+.div-CM8 {
+    background-image: url(Sources/fotoComunas/villahermosa8.png);
+    background-size: 800px;
+    background-repeat: no-repeat;
+    background-position-x: 20px;
+    background-position-y: -70px;
+}
+
+.div-CM9 {
+    background-image: url(Sources/fotoComunas/buenosaires9.png);
+    background-size: 800px;
+    background-repeat: no-repeat;
+    background-position-x: 20px;
+    background-position-y: -40px;
+}
+
+.div-CM10 {
+    background-image: url(Sources/fotoComunas/lacandelaria10.png);
+    background-size: 800px;
+    background-repeat: no-repeat;
+    background-position-x: 20px;
+    background-position-y: -40px;
+}
+
+.div-CM11 {
+    background-image: url(Sources/fotoComunas/laureles-estadio11.png);
+    background-size: 800px;
+    background-repeat: no-repeat;
+    background-position-x: 20px;
+    background-position-y: -70px;
+}
+
+.div-CM12 {
+    background-image: url(Sources/fotoComunas/la-america12.png);
+    background-size: 800px;
+    background-repeat: no-repeat;
+    background-position-x: 20px;
+    background-position-y: -40px;
+}
+
+.div-CM13 {
+    background-image: url(Sources/fotoComunas/sanjavier13.png);
+    background-size: 800px;
+    background-repeat: no-repeat;
+    background-position-x: 20px;
+    background-position-y: -40px;
+}
+
+.div-CM14 {
+    background-image: url(Sources/fotoComunas/elpoblado14.png);
+    background-size: 800px;
+    background-repeat: no-repeat;
+    background-position-x: 20px;
+    background-position-y: -70px;
+}
+
+.div-CM15 {
+    background-image: url(Sources/fotoComunas/guayabal15.png);
+    background-size: 800px;
+    background-repeat: no-repeat;
+    background-position-x: 20px;
+    background-position-y: -70px;
+}
+
+.div-CM16 {
+    background-image: url(Sources/fotoComunas/belen16.png);
+    background-size: 800px;
+    background-repeat: no-repeat;
+    background-position-x: 20px;
+    background-position-y: -40px;
+}
+
 
 .sectionextraMain {
     display: flex;
     flex-flow: row nowrap;
-    height: 800px;
+    height: 1000px;
+    padding: 50px 0 0 0;
 }
 
 .extraMain__Div, .extraMain__Div2 {

@@ -9,6 +9,36 @@ document.addEventListener("DOMContentLoaded", () => {
     const logoUNAL = document.createElement("img")
     const switchOff = document.querySelector("#switch")
     const nav = document.querySelector(".navegadorMain")
+
+
+
+
+
+
+    const selectMain = document.getElementById("selectComunas");
+const div2Comunas = document.querySelector(".graficos__Div2");
+
+selectMain.addEventListener("change", (event) => {
+    const selectedIndex = event.target.value;
+
+    // Limpiar contenido anterior
+    div2Comunas.innerHTML = "";
+
+    if (selectedIndex !== "") {
+        const nuevoDiv = document.createElement("div");
+        nuevoDiv.classList.add("div1__Com");
+
+        // Añadimos clase con el número de la opción, por ejemplo: "div-3"
+        nuevoDiv.classList.add(`div-${selectedIndex}`);
+
+        div2Comunas.appendChild(nuevoDiv);
+    }
+});
+
+
+
+
+
     // switchsito
     
 
