@@ -51,12 +51,12 @@ switchOff.addEventListener("click", () => {
     nav.classList.toggle("modo-dark")
 });
 
-    
+
 
     // agregar contenido a elementos
     buttonLoad.textContent = "Entrar a la pagina"
     nombrePagLoad.textContent ="Medellin ciudad emprendedora"
-    descPagLoad.textContent = "Bienvenidx a nuestra pagina del proyecto final de Talento Tech, esta ha sido desarrollada por estudiantes de la Universidad Nacional de Colombia sede Medellin"
+    descPagLoad.textContent = "Bienvenidos a nuestra pagina del proyecto final de Talento Tech, esta ha sido desarrollada por estudiantes de la Universidad Nacional de Colombia sede Medellin"
 
     // agregar elementos al body
     document.body.appendChild(notiLoad)
